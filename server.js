@@ -63,6 +63,14 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req,res ) => {
+  res.render('projects.hbs', {
+	pageTitle: 'Projects Page',
+	welcomeMessage: 'Portfolio Page Here:',
+	copyleft: `Copyleft`
+  });
+});
+
 app.get('/bad', (req,res ) => {
   res.send({
 	errorMessage: 'Bad Route Yo, Unable to handle your request?'
