@@ -65,7 +65,7 @@ app.get('/about', (req, res) => {
 
 app.get('/projects', (req,res ) => {
   res.render('projects.hbs', {
-	pageTitle: 'Projects Page',
+	pageTitle: 'Projects',
 	welcomeMessage: 'Portfolio Page Here:',
 	copyleft: `Copyleft`
   });
